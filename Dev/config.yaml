@@ -1,0 +1,23 @@
+paths:
+  docs_dir: data
+  chroma_dir: chroma
+  cache_dir: cache
+chunking:
+  chunk_size: 1024
+  chunk_overlap: 128
+  pages_per_group: 2
+  page_overlap: 1
+  chunk_group_limit: 6000
+models:
+  default: gpt-4o
+  tagging: mistral-7b-instruct
+  summarizer: gpt-4o
+context_windows:
+  gpt-4o: 128000
+  gpt-4-turbo: 128000
+  gpt-4: 8192
+  gpt-3.5-turbo: 16385
+  mistral-7b-instruct: 32768
+limits:
+  tokens_per_minute: 40000
+  token_margin: 512
