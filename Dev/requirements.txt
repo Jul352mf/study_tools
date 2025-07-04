@@ -1,0 +1,9 @@
+llama-index-core
+llama-index-llms-openai
+chromadb
+tiktoken
+tenacity
+qdrant-client
+genanki
+tqdm
+pyyaml

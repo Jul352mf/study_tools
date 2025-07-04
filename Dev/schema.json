@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LearningUnit",
+  "type": "object",
+  "required": ["id", "text", "categories", "source", "status", "lang"],
+  "properties": {
+    "id": {"type": "string", "description": "UUID or short identifier"},
+    "text": {"type": "string", "description": "core content"},
+    "categories": {"type": "array", "items": {"type": "string"}},
+    "source": {"type": "string", "description": "PDF name and page/chunk"},
+    "status": {"type": "integer", "description": "0 unknown, >0 seen, -1 known"},
+    "related_to": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "other LU ids"
+    },
+    "anki_card_id": {"type": ["string", "null"], "description": "linked Anki card"},
+    "lang": {"type": "string"}
+  }
+}
