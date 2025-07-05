@@ -1,0 +1,18 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+# Virtual envs
+venv/
+.env
+
+# Data
+chroma/
+cache/
+*.apkg
+
+# study PDFs kept local
+Dev/data/
+
+# Other
+.idea/

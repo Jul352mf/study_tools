@@ -1,0 +1,13 @@
+agents:
+  - name: Ingestor
+    role: Split PDFs into sentence-aware chunks and store them in Qdrant.
+  - name: Summariser
+    role: Summarise chunks using GPT-4o and cache results.
+  - name: Tagger
+    role: Classify chunks into categories with local Mistral.
+  - name: LUManager
+    role: Persist Learning Units with status counters and relations.
+  - name: Chat
+    role: Interactive Q&A and tutoring over the stored materials.
+  - name: FlashcardBuilder
+    role: Generate Anki-compatible decks from summaries.

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "study-tools"
+version = "0.2.0"
+description = "Universal Study Tutor"
+authors = ["Study Bot Team"]
+packages = [{include = "study_tools", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+llama-index-core = "*"
+llama-index-llms-openai = "*"
+chromadb = "*"
+tiktoken = "*"
+tenacity = "*"
+qdrant-client = "*"
+genanki = "*"
+tqdm = "*"
+pyyaml = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+ruff = "*"
+black = "*"
